@@ -1,3 +1,5 @@
+using OrderSeervice.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//ADDING THE DI  for db
+builder.Services.AddSingleton<IPostgresClient, PostgresClient>();
+// add db config
+
+// adding the db configuration for the 
+builder.Services.Configure<PostgresClientOptions>(builder.Configuration.GetSection("Postgres.config"));
 
 var app = builder.Build();
 
