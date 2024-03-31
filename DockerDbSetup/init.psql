@@ -1,0 +1,12 @@
+-- Use the database
+USE mydatabase;
+
+-- Create a test table
+CREATE TABLE IF NOT EXISTS cars (
+  brand VARCHAR(255),
+  model VARCHAR(255),
+  year INT
+); 
+
+
+INSERT into cars(brand,model,year)VALUES('tata','sedan',2023);
