@@ -1,4 +1,4 @@
-namespace OrderSeervice.Configuration
+namespace UsermanagementService.Configuration
 {
     public class PostgresClientOptions
     {

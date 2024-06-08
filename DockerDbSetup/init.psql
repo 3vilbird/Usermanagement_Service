@@ -1,3 +1,6 @@
+
+
+
 -- Use the database
 USE mydatabase;
 
@@ -10,3 +13,5 @@ CREATE TABLE IF NOT EXISTS cars (
 
 
 INSERT into cars(brand,model,year)VALUES('tata','sedan',2023);
+
+select * from cars;

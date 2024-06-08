@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Options;
 using Npgsql;
 
-namespace OrderSeervice.Configuration
+namespace UsermanagementService.Configuration
 {
     public class PostgresClient : IPostgresClient
     {
@@ -22,7 +22,7 @@ namespace OrderSeervice.Configuration
 
         }
 
-        public async void ReadData(string query, Action<NpgsqlDataReader> callBack)
+        public async Task ReadData(string query, Action<NpgsqlDataReader> callBack)
         {
             //add the exception handling
 

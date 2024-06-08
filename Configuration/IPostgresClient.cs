@@ -1,9 +1,9 @@
 using Npgsql;
 
-namespace OrderSeervice.Configuration
+namespace UsermanagementService.Configuration
 {
     public interface IPostgresClient
     {
-        public void ReadData(string query, Action<NpgsqlDataReader> callBack);
+        public Task ReadData(string query, Action<NpgsqlDataReader> callBack);
     }
 }

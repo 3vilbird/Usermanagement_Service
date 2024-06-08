@@ -1,4 +1,4 @@
-using OrderSeervice.Configuration;
+using UsermanagementService.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
